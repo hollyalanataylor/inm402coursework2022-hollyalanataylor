@@ -1,0 +1,152 @@
+labels:
+  - name: questions
+    paired:
+      htmlTemplate: <div class="questions"><span class="annotation">What are the research questions that your data visualization will help you to answer?</span><fieldset><legend>Research Questions</legend>{{children}}</fieldset></div>
+
+  - name: visualization
+    paired:
+      htmlTemplate: <div class="visualization"><h2>1. The Visualization</h2><span class="annotation">Insert your visualization here.</span>{{children}}</fieldset></div>
+
+  - name: insights
+    paired:
+      htmlTemplate: <div class="insights"><h2>2. Insights</h2><span class="annotation">What has your visualization allowed you to discover about your data that help you answer your research questions? Identify a maximum of the <b>3</b> most important insights that result directly from your visualization.</span>{{children}}</fieldset></div>
+
+  - name: designJustification
+    paired:
+      htmlTemplate: <div class="designJustification"><h2>3. Design Justification</h2><span class="annotation">Why have you designed your visualizations this way? Itemize up to <b>3</b> design choices providing a justification for each supported by literature or evidence of good practice.</span>{{children}}</fieldset></div>
+
+  - name: validation
+    paired:
+      htmlTemplate: <div class="validation"><h2>4. Validation </h2><span class="annotation"> Itemize up to <b>3</b> evaluative statements of the strengths and weaknesses of your visualization supported by literature or evidence of good practice.</span>{{children}}</fieldset></div>
+
+  - name: references
+    paired:
+      htmlTemplate: <div class="references"><hr /><h3>References</h3><span class="annotation">Add references from literature that you have used to support your design justification.</span>{{children}}</fieldset></div>
+
+  - name: task
+    paired:
+      htmlTemplate: <div class="task"><fieldset><legend>Task</legend>{{children}}</fieldset></div>
+
+  - name: whoami
+    paired:
+      htmlTemplate: <div class="whoami"><div class="annotation">Please add your name and City email address here:</div>{{children}}</fieldset></div>
+
+rules:
+  - description: Please add your research questions between {(questions|} {|questions)} labels in this document.
+    selector:
+      label: questions
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include some research questions that motivate your visualization.
+    selector:
+      label: questions
+    children:
+      minimumTrimmedTextLength: 175
+
+  - description: Please add your visualization(s) between {(visualization|} {|visualization)} labels in this document.
+    selector:
+      label: visualization
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include some visualization(s)
+    selector:
+      label: visualization
+    children:
+      minimumTrimmedTextLength: 52
+
+  - description: Please add up to 3 main insights between {(insights|} {|insights)} labels in this document.
+    selector:
+      label: insights
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include up to 3 main insights derived from your visualization.
+    selector:
+      label: insights
+    children:
+      minimumTrimmedTextLength: 300
+
+  - description: Please add up to 3 design choice justifications between {(designJustification|} {|designJustification)} labels in this document.
+    selector:
+      label: designJustification
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include a justification for your design.
+    selector:
+      label: designJustification
+    children:
+      minimumTrimmedTextLength: 185
+
+  - description: Please add up to 3 statements evaluating the strengths and weaknesses of your visualization between {(validation|} {|validation)} labels in this document.
+    selector:
+      label: validation
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include a validation for your design.
+    selector:
+      label: validation
+    children:
+      minimumTrimmedTextLength: 250
+
+  - description: Please full references to literature {(references|} {|references)} labels in this document.
+    selector:
+      label: references
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include some references to support your justification
+    selector:
+      label: references
+    children:
+      minimumTrimmedTextLength: 98
+
+  - description: Please add your name and email address between {(whoami|} {|whoami)} labels in this document.
+    selector:
+      label: whoami
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: Please add your name and email address between the 'whoami' labels in this document.
+    selector:
+      label: whoami
+    children:
+      minimumTrimmedTextLength: 65
+
+styling:
+  css: |
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    legend {
+      font-size:0.9em; font-style: italic;
+    }
+
+    .questions fieldset {
+      background: #f3f3f3;
+    }
+
+    .questions {
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+
+    .annotation {
+      font-size: 1.2em;
+      font-family: caveat, cursive !important;
+    }
+
+    .task fieldset {
+      background: #fffafa;
+      border-color: #a66;
+    }
+
+    .whoami {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      font-weight: bold;
+    }

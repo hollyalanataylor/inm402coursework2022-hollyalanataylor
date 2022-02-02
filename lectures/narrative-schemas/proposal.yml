@@ -1,0 +1,104 @@
+labels:
+  - name: questions
+    paired:
+      htmlTemplate: <div class="questions"><span class="annotation">What are the research questions that your data visualization will help you to answer?</span><fieldset><legend>Research Questions</legend>{{children}}</fieldset></div>
+
+  - name: justification
+    paired:
+      htmlTemplate: <div class="justification"><h2>Justification</h2><span class="annotation">Why will data visualization be the best approach to help you answer your research questions?</span>{{children}}</fieldset></div>
+
+  - name: datasources
+    paired:
+      htmlTemplate: <div class="datasources"><h2>Data sources</h2><span class="annotation">Where will you get your data from?</span>{{children}}</fieldset></div>
+
+  - name: task
+    paired:
+      htmlTemplate: <div class="task"><fieldset><legend>Task</legend>{{children}}</fieldset></div>
+
+  - name: whoami
+    paired:
+      htmlTemplate: <div class="whoami"><div class="annotation">Please add your name and City email address here:</div>{{children}}</fieldset></div>
+
+rules:
+  - description: Please add your research questions between {(questions|} {|questions)} labels in this document.
+    selector:
+      label: questions
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: You must include some research questions that motivate your visualization.
+    selector:
+      label: questions
+    children:
+      minimumTrimmedTextLength: 175
+
+  - description: Please add a brief justification for why visualization is needed between {(justification|} {|justification)} labels in this document.
+    selector:
+      label: justification
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: Please add a brief justification for why visualization is needed to best answer your research questions between the 'justification; labels in this document.
+    selector:
+      label: justification
+    children:
+      minimumTrimmedTextLength: 200
+
+  - description: Please add a brief description of your data sources between {(datasources|} {|datasources)} labels in this document.
+    selector:
+      label: datasources
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: Please add a brief description of your data sources between the 'datasources' labels in this document.
+    selector:
+      label: datasources
+    children:
+      minimumTrimmedTextLength: 150
+
+  - description: Please add your name and email address between {(whoami|} {|whoami)} labels in this document.
+    selector:
+      label: whoami
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: Please add your name and email address between the 'whoami' labels in this document.
+    selector:
+      label: whoami
+    children:
+      minimumTrimmedTextLength: 65
+
+styling:
+  css: |
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    legend {
+      font-size:0.9em; font-style: italic;
+    }
+
+    .questions fieldset {
+      background: #f3f3f3;
+    }
+
+    .questions {
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+
+    .annotation {
+      font-size: 1.2em;
+      font-family: caveat, cursive !important;
+    }
+
+    .task fieldset {
+      background: #fffafa;
+      border-color: #a66;
+    }
+
+    .whoami {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      font-weight: bold;
+    }

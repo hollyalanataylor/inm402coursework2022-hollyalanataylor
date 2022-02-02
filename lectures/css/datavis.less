@@ -1,0 +1,79 @@
+// @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Fjalla+One|Caveat");
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Roboto+Slab:wght@500&family=Old+Standard+TT&family=Pinyon+Script&display=swap");
+// Stylesheet for default litvis formatting.
+// Uses Lexend for dyslexia-friendly body text and a contrasting slab serif for headings.
+// V12, 23rd August, 2021
+
+#litvis {
+  @fSize: 11pt;
+  font-family: "Lexend", sans-serif;
+  font-size: @fSize;
+  font-weight: 400;
+  line-height: 1.45;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto Slab", serif;
+  }
+
+  blockquote {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 1.1 * @fSize;
+    background-color: #f6f6f6;
+    margin-right: 2em;
+  }
+
+  blockquote h1,
+  blockquote h2,
+  blockquote h3,
+  blockquote h4,
+  blockquote h5,
+  blockquote h6 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+  }
+
+  code,
+  pre {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  li {
+    margin: 0.5em 0;
+  }
+
+  pre {
+    border: solid 1px #ccc;
+    border-radius: 8px;
+  }
+
+  div[data-role="litvisOutput"] > span {
+    font-family: iosevka, monospace;
+    font-weight: bold;
+    font-size: 1.6 * @fSize;
+    display: block;
+    margin-bottom: 0.75em;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding-left: 0.5em;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"],
+  input[type="select"],
+  input[type="range"] {
+    margin-left: 1em;
+  }
+
+  input[type="range"] {
+    min-width: 120px;
+    max-width: 120px;
+  }
+}
