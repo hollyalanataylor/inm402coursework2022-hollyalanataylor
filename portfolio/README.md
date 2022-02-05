@@ -10,9 +10,9 @@ id: litvis
 
 _Important: Please Add you name and City email address below and stage/commit/push to your Github repo._
 
-## Name:
+## Name: Holly Taylor
 
-## City Email:
+## City Email: holly.taylor.2@city.ac.uk
 
 ---
 
