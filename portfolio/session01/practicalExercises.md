@@ -47,7 +47,7 @@ The image isn't interactive, but it was published in a magazine as a fold out, w
 
 4. A narrative supporting the construction of knowledge
 
-A narrative is provide on the left hand side, which introduces the dataset. There are also comments on signigicant areas surrounding the chart e.g. the strong labout markets influencing immigration in the USA, and recent conflict in Syria influencing their levels if emigration.
+A narrative is provide on the left hand side, which introduces the dataset. There are also comments on signigicant areas surrounding the chart e.g. the strong labout markets influencing immigration in the USA, and recent conflict in Syria influencing their levels of emigration.
 
 5. Generates an aesthetic response in order to encourage users to engage with the data or question.
 
