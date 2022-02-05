@@ -31,9 +31,7 @@ Use this document as a place to add your answers to the week's practical exercis
 
 \_Add your 5-point critique here (see Q.3 of the session 1 practical exercises).
 
-The example I am choosing to critique is Migration Waves
-
-https://www.informationisbeautifulawards.com/showcase/4191-migration-waves
+The example I am choosing to critique is [Migration Waves](https://www.informationisbeautifulawards.com/showcase/4191-migration-waves)
 
 1. Represents a complex dataset graphically that could not as effectively be represented via other means.
 
@@ -45,9 +43,9 @@ This dataset shows connections between immigration and emigration due to conflic
 
 3. Frequently involves interaction to allow a user to influence what they see.
 
-The image isn't interactive, but it was published in a magazine as a fold out, which is more interaction than a normal flick the page sort of job.
+The image isn't interactive, but it was published in a magazine as a fold out, which is more interaction than just flicking the page over. You can use your finger to follow the lines of emigration and immigration between conflicts.
 
-4. A narrative supporting the construction of knowledge [human in the loop]
+4. A narrative supporting the construction of knowledge
 
 A narrative is provide on the left hand side, which introduces the dataset. There are also comments on signigicant areas surrounding the chart e.g. the strong labout markets influencing immigration in the USA, and recent conflict in Syria influencing their levels if emigration.
 
@@ -113,8 +111,4 @@ opinionEUchart =
 
 _Add a link to a photo of your design sketch._
 
-<img src='Question7.jpg'/>
-
-```markdown
-    ![this is my exercise for question 7](Question7.jpg)
-```
+[Please click here to see my answer for question 7](Question7.jpg)
