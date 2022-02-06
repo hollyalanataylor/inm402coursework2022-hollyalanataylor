@@ -134,3 +134,45 @@ Create functions to calculate the following and show their output in litvis with
 - The mean (average) of the even numbers from 2 to 10.
 
 {|task)}
+
+Answers
+
+Q.1
+
+```elm {l raw}
+productOneToSix : Int
+productOneToSix =
+    1 * 2 * 3 * 4 * 5 * 6
+```
+
+Q.2
+
+```elm {l raw}
+numberOfSeconds : Int
+numberOfSeconds =
+    365 * 24 * 60 * 60
+```
+
+Q.3
+
+```elm {l raw}
+halfPlusSquareRoot : Float
+halfPlusSquareRoot =
+    (1/2) + (sqrt 5) / 2
+```
+
+Q.4
+
+```elm {l raw}
+jamesBondName : String
+jamesBondName =
+    "Taylor, " ++ "Holly " ++ "Taylor"
+```
+
+Q.5
+
+```elm {l raw}
+mean : Float
+mean =
+    (2 + 4 + 6 + 8 + 10) / 5
+```
