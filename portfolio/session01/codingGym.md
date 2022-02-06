@@ -73,15 +73,39 @@ Create separate functions, that display the following, each in their own `raw` c
 {|task)}
 
 ```elm {l raw}
--- Place your first name function here inside the code block.
+myFirstName : String
+myFirstName =
+    "Holly"
 ```
 
 ```elm {l raw}
--- Place your last name function here inside the code block.
+myLastName : String
+myLastName =
+    "Taylor"
 ```
 
 ```elm {l raw}
--- Place your commuting minutes function here inside the code block.
+myCommute: Int
+myCommute =
+    70
+```
+
+```elm {l raw}
+goldenRatio: Float
+goldenRatio =
+        1.61803
+```
+
+```elm {l raw}
+dataVisQuote: String
+dataVisQuote =
+        "The greatest value of a picture is when it forces us to notice what we never expected to see. - John Tukey"
+```
+
+```elm {l raw}
+yearCholeraMap : Int
+yearCholeraMap =
+    1854
 ```
 
 ## 1.2. Simple functions with operators
