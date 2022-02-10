@@ -48,6 +48,33 @@ Create separate functions, each in their own code block, that display the follow
 
 {|task)}
 
+```elm {l raw}
+cities : List String
+cities =
+    [ "Glasgow", "Cairo", "Mexico City", "Guadalajara" ]
+
+integersList : List Int
+integersList =
+    [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 ]
+
+triangleList : List Int
+triangleList =
+    [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91]
+
+floatList : List Float
+floatList =
+    [1.0, 0.5, 0.33, 0.25, 0.2, 0.16, 0.14, 0.125]
+
+rainbow : List String
+rainbow =
+    ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
+mammals : List String
+mammals =
+    []
+
+```
+
 ## 2.2. In-built functions to generate lists
 
 Elm has a number of functions that make it easier to create lists. In particular [List.range](https://package.elm-lang.org/packages/elm/core/latest/List#range) for creating a range of integers; [List.repeat](https://package.elm-lang.org/packages/elm/core/latest/List#repeat) for creating a list of repeated items, the [cons operator `::`](<https://package.elm-lang.org/packages/elm/core/latest/List#(::)>) for adding an item to a list and the [++](https://package.elm-lang.org/packages/elm/core/latest/Basics#++) operator for combining two lists. For example:
@@ -84,6 +111,29 @@ Choosing from the list-generating functions above, create separate functions to 
 - Create a single list made up by combining a list of three animals, three vegetables and three minerals.
 
 {|task)}
+
+```elm { l raw}
+listRange : List Int
+listRange =
+    List.range 2001 2022
+
+listNegative : List Int
+listNegative =
+    List.range -149 -101
+
+addMe : List String
+addMe =
+    "Taylor" :: [ "Ripley", "Vasquez", "Bishop", "Burke" ]
+
+repeatDozen : List String
+repeatDozen =
+    List.repeat 12 "dozen"
+
+aniVegMin : List String
+aniVegMin =
+    [ "Squirrel", "Pinemarten", "Owl" ] ++ [ "Carrot", "Lettuce", "Cucumber" ] ++ [ "Calcium", "Potassium", "Sulfur" ]
+
+```
 
 ## 2.3. Summarising Lists
 
@@ -137,3 +187,15 @@ Create a functions that return tuples that represent:
 - A list of 2d coordinates.
 
 {|task)}
+
+```elm {raw}
+commute : (String, Int)
+commute =
+    ("Holly Taylor", 70)
+```
+
+```elm {raw}
+location3d : (Int,Int,Int)
+location3d =
+    (0,1,2)
+```
